@@ -5,7 +5,7 @@ function Navbar() {
         <div className="flex flex-wrap justify-between items-center bg-local p-3">
           <img className="w-28" src="https://portofmokha.com/cdn/shop/files/type-white_f6376a9a-39f4-4396-827e-25364d56abf1_100x.png?v=1613734073" alt="" />
           <nav className="flex justify-end">
-            <ul className="flex gap-3 top-0-0 w-auto text-lg pr-8">
+            <ul className="flex gap-3 w-auto text-lg pr-8">
               <a href="#" class=" text-white  font-semibold">
                 Coffee
               </a>
@@ -17,8 +17,8 @@ function Navbar() {
               </a>
             </ul>
             <div>
-              <button>
-                <img className=" pr-[20px] h-10 pb-1" src="https://www.svgrepo.com/show/505592/cart-2.svg" alt="" />
+              <button className="bg-transparent hover:bg-amber-900 text-white font-semibold hover:text-white  border border-white hover:border-transparent rounded  transition-all duration-700">
+                <img className=" pr-[6px] h-10 pb-1" src="https://www.svgrepo.com/show/505592/cart-2.svg" alt="" />
               </button>
             </div>
           </nav>

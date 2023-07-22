@@ -1,8 +1,8 @@
 function Body() {
-    return (
-      <div>
- {/* text */}
- <div className="flex justify-center text-3xl pt-7 ">
+  return (
+    <div>
+      {/* text */}
+      <div className="flex justify-center text-3xl pt-7 ">
         <h2>"After the first three sips, I was 100% percent sure it was the best coffee i'd ever tasted"</h2>
       </div>
       {/* end */}
@@ -20,7 +20,10 @@ function Body() {
           <div className=" pt-[20px] pl-[60px]  ">
             <h1 className="text-white font-semibold text-5xl font-sans flex justify-center pr-32 pt-32 ">SEE OUR STORY</h1>
             <div className="pt-10 pr-[150px] flex justify-center">
-              <button type="button" className="  bg-transparent hover:bg-amber-900 text-white font-semibold hover:text-white py-1 px-3 border border-white hover:border-transparent rounded font-mono mx-3 transition-all duration-700 ">
+              <button
+                type="button"
+                className="  bg-transparent hover:bg-amber-900 text-white font-semibold hover:text-white py-1 px-3 border border-white hover:border-transparent rounded font-mono mx-3 transition-all duration-700 mix-blend-lighten"
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
                 </svg>
@@ -54,7 +57,7 @@ function Body() {
                 Experience the story of how Mokhtar escaped Yemen<br></br> by boat to introduce his coffee to the world and inspired<br></br> a New York Times best selling novel.
               </p>
               <div className="pt-[30px]">
-                <a href="#" className=" bg-transparent hover:bg-amber-900 text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded mx-3 transition-all duration-700">
+                <a href="#" className=" bg-transparent hover:bg-amber-900 text-black font-extrabold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded mx-3 transition-all duration-700 mix-blend-darken ">
                   The Story
                 </a>
               </div>
@@ -83,7 +86,10 @@ function Body() {
               </p>
             </div>
             <div className="pt-7 pr-[150px] flex ">
-              <button type="button" className="bg-transparent hover:bg-amber-900 text-black font-semibold hover:text-white py-1 px-3 border border-black hover:border-transparent rounded font-mono mx-3 transition-all duration-700] ">
+              <button
+                type="button"
+                className="bg-transparent hover:bg-amber-900 text-black font-semibold hover:text-white py-1 px-3 border border-black hover:border-transparent rounded font-mono mx-3 transition-all duration-700 mix-blend-darken "
+              >
                 {" "}
                 SEE PRAISE
               </button>
@@ -112,14 +118,15 @@ function Body() {
             <img className="w-[300px]" src="https://portofmokha.com/cdn/shop/files/cbs-news_1024x1024.png?v=1613734082" alt="" />
           </div>
           <div class="flex justify-center pt-9 pr-9">
-            <button className="bg-transparent hover:bg-amber-900 text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded mx-3 transition-all duration-700">SEE PRESS</button>
+            <button className="bg-transparent hover:bg-emerald-900 text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded mx-80 transition-all duration-700 mix-blend-darken">
+              SEE PRESS
+            </button>
           </div>
         </div>
       </div>
       {/* end */}
-      </div>
-    );
-  }
-  
-  export default Body;
-  
+    </div>
+  );
+}
+
+export default Body;

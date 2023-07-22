@@ -5,9 +5,8 @@ function Footer() {
       <footer>
         <div className="p-10 bg-gray-500 text-white">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+            <div className="grid lg:grid-cols-4 gap-2">
               <div className="mb-5">
-                <h4></h4>
                 <ul>
                   <li>Home</li>
                   <li>Shop</li>
@@ -29,8 +28,8 @@ function Footer() {
                   <li>Terms of Service</li>
                 </ul>
               </div>
-              <div className="mb-5 ">
-                <div className="absolute  pl-[600px]">
+              <div className="mb-10 ">
+                <div className="absolute pl-[600px]">
                   <h4>Sign up for email updates</h4>
                   <form className="flex">
                     <input type="text" name="" />
