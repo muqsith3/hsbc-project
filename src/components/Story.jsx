@@ -1,3 +1,4 @@
+
 export default function Story() {
   return (
     <>
@@ -24,6 +25,7 @@ export default function Story() {
                       The Story
                     </button>
                   </div>
+
                 </div>
               </div>
             </div>

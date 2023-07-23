@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import ProductsPage from "./pages/ProductsPage";
 import ProductDetail from "./pages/ProductDetail";
 
+
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
             element={<ProductDetail></ProductDetail>}></Route>
         </Routes>
       </Router>
+
     </>
   );
 }

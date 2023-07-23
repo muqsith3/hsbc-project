@@ -1,10 +1,13 @@
+
 import React, { useState } from "react";
 import { AiFillStar, AiFillCamera } from "react-icons/ai";
 import { BiSolidVideo } from "react-icons/bi";
 
+
 export default function Review() {
   const [showForm, setShowForm] = useState(false);
   const [rating, setRating] = useState(0);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [title, setTitle] = useState("");
@@ -12,6 +15,7 @@ export default function Review() {
   const [imageUrl, setImageUrl] = useState("");
   const [videoUrl, setVideoUrl] = useState("");
   const [url, setUrl] = useState("");
+
 
   const toggleReviewForm = () => {
     setShowForm(!showForm);
@@ -54,6 +58,7 @@ export default function Review() {
     // Lakukan logika atau aksi yang sesuai dengan kebutuhan aplikasi Anda
     // Misalnya, mengirim data ke backend atau menyimpan ke database
     // Setelah itu, Anda dapat mereset nilai-nilai state form jika diperlukan
+
     setName("");
     setEmail("");
     setTitle("");
@@ -61,6 +66,9 @@ export default function Review() {
     setImageUrl("");
     setVideoUrl("");
     setUrl("");
+
+    
+
     setRating(0);
     setShowForm(false);
   };
@@ -72,6 +80,7 @@ export default function Review() {
           <h1 className="text-2xl font-bold tracking-widest">
             CUSTOMER REVIEWS
           </h1>
+
           <div className="grid grid-cols-5 gap-4">
             <div className="pr-4 py-4 pl-0">
               <div className="flex">
@@ -84,19 +93,23 @@ export default function Review() {
               <h3>Based on 290 reviews</h3>
             </div>
             <div className="col-span-3 p-4">
+
               <div className="">{/* Opsi rating */}</div>
+
             </div>
             <div className="p-4">
               <button
                 className="cursor-pointer border border-black bg-none py-4 px-4 font-semibold tracking-wide"
                 onClick={toggleReviewForm}>
                 {showForm ? "CANCEL REVIEW" : "WRITE A REVIEW"}
+
               </button>
             </div>
           </div>
 
           <div className="inline-block relative w-36">
             <select className="block appearance-none text-sm w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+
               <option>Highest Rating</option>
               <option>Most Recent</option>
               <option>Lowest Rating</option>
@@ -104,12 +117,15 @@ export default function Review() {
               <option>Picture First</option>
               <option>Video First</option>
               <option>Most Helpful</option>
+
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
               <svg
                 className="fill-current h-4 w-4"
                 xmlns="http://www.w3.org/2000/svg"
+
                 viewBox="0 0 20 20">
+
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
               </svg>
             </div>
@@ -119,6 +135,7 @@ export default function Review() {
             {showForm && (
               <form className="my-4" onSubmit={handleSubmit}>
                 <div className="my-4">
+
                   <label
                     for="email"
                     className="block text-sm font-semibold text-gray-800">
@@ -146,6 +163,7 @@ export default function Review() {
                     onChange={handleEmailChange}
                     required
                   />
+
                 </div>
 
                 <div className="my-4">
@@ -155,7 +173,9 @@ export default function Review() {
                       <AiFillStar
                         key={value}
                         className={`cursor-pointer text-slate-500 ${
+
                           rating >= value ? "fill-current" : ""
+
                         }`}
                         onClick={() => handleRatingChange(value)}
                       />
@@ -164,6 +184,7 @@ export default function Review() {
                 </div>
 
                 <div className="my-4">
+
                   <label
                     for="email"
                     className="block text-sm font-semibold text-gray-800">
@@ -176,6 +197,7 @@ export default function Review() {
                     onChange={handleTitleChange}
                     required
                   />
+
                 </div>
 
                 <div className="my-4">
@@ -187,7 +209,9 @@ export default function Review() {
                     className="border border-gray-400 px-[45%] py-2 w-full h-28"
                     value={review}
                     onChange={handleReviewChange}
+
                     required></textarea>
+
                 </div>
 
                 <div className="my-4">
@@ -199,14 +223,17 @@ export default function Review() {
                       htmlFor="image"
                       className="flex items-center cursor-pointer">
                       <AiFillCamera
+
                         type="file"
                         id="image"
                         accept="image/*"
                         className="mr-2 text-slate-700 hover:text-slate-900"
                         value={imageUrl}
                         onChange={handleImageUrlChange}
+
                         size={100}
                       />
+
                     </label>
                   </div>
                 </div>
@@ -220,6 +247,7 @@ export default function Review() {
                       htmlFor="video"
                       className="flex items-center cursor-pointer">
                       <BiSolidVideo
+
                         type="file"
                         id="video"
                         accept="video/*"
@@ -228,6 +256,7 @@ export default function Review() {
                         onChange={handleVideoUrlChange}
                         size={100}
                       />
+
                     </label>
                   </div>
                 </div>
@@ -245,11 +274,13 @@ export default function Review() {
                     onChange={handleUrlChange}
                     required
                   />
+
                 </div>
 
                 <button
                   type="submit"
                   className="border border-black bg-none text-black py-4 px-5 font-semibold">
+
                   Submit Review
                 </button>
               </form>
