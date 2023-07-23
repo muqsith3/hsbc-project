@@ -1,15 +1,23 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import Home from "./pages/Home";
+import ProductsPage from "./pages/ProductsPage";
+import ProductDetail from "./pages/ProductDetail";
 
 function App() {
   return (
     <>
-      <div className="w-full bg-green-500">
-        <div className="container bg-slate-500 m-auto">
-          <h1 className="text-2xl text-red-500 ">
-            project grop 3- untuk final project
-          </h1>
-        </div>
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route
+            path="/products"
+            element={<ProductsPage></ProductsPage>}></Route>
+          <Route
+            path="/productDetail"
+            element={<ProductDetail></ProductDetail>}></Route>
+        </Routes>
+      </Router>
     </>
   );
 }
