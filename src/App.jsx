@@ -3,12 +3,13 @@ import "./App.css";
 import Home from "./pages/Home";
 import ProductsPage from "./pages/ProductsPage";
 import ProductDetail from "./pages/ProductDetail";
+import SpecialProducts from "./components/Dashboard/SpecialProducts";
 
 
 function App() {
   return (
     <>
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route
@@ -18,8 +19,8 @@ function App() {
             path="/productDetail"
             element={<ProductDetail></ProductDetail>}></Route>
         </Routes>
-      </Router>
-
+      </Router> */}
+      <SpecialProducts/>
     </>
   );
 }
