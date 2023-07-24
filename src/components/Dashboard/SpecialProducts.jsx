@@ -11,7 +11,7 @@ export default function SpecialProducts() {
   return (
     <>
     <div className='text-2xl font-bold text-center py-5'>
-        <h1>Weekend <span className='text-[#F6A453]'>best product</span></h1>
+        <h1>Weekend <span className='text-[#F6A453]'>best products</span></h1>
         <h3 className='text-lg mt-2 font-normal'>Check out our daily special product that you can get with +20% OFF!</h3>
     </div>
     <div className='flex justify-center py-10'>
